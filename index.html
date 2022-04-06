@@ -14,7 +14,7 @@
 
 </head>
 
-<body bgcolor="#205795">
+<body bgcolor="lightgray">
     <center>
         <header><img
                 src="https://media.cdn.gradconnection.com/uploads/5b8c0d5d-91a7-40e7-b10d-aaebf5ef34f3-tata-new-banner1.jpg"
@@ -22,15 +22,31 @@
         <h1>Welcome to TCS e-sign</h1>
 
         <form action="./page1.html">
-            <label for="email">Email:</label>
+            <label for="email" class="letter">Email:</label>
+         
             <input type="text" id="username" name="username" required> 
             <br><br>
-            <label for="pwd">Password:</label>
+            <label for="pwd" class="letter">Password:</label>
             <input type="password" id="pwd" name="pwd" required>
             <br><br>
-            <input type="submit" value="Log In"> 
+            <label for="confirm" class="letter">Confirm Password:</label>
+            <input type="password" id="pwd2" name="pwd2" class="">
+            <p class="letter">Please answer the CAPTCHA</p>
+            <div class="center">
+                <div id="captchaBackground">    
+                <canvas id="captcha">captcha text</canvas>
+                <input id="textBox" type="text" name="text">
+                <div id="buttons">
+                <input id="submitButton" type="submit" class="login">
+                <button id="refreshButton" type="submit" class="login">Refresh</button>
+                </div>
+                <span id="output"></span>
+                </div>
+                
+                </div>
+                <script src="./captcha.js"></script>
+             
         </form>
-       
     </center>
 </body>
 

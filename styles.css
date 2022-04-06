@@ -33,6 +33,15 @@ h1{
 	margin-left: 25%;
 	margin-right: 25%;
 }
+body{
+	background-image: url("https://media.cdn.gradconnection.com/uploads/5b8c0d5d-91a7-40e7-b10d-aaebf5ef34f3-tata-new-banner1.jpg");
+	background-repeat: no-repeat;
+}
+.container{
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 40%;
+}
 
 /* this code is for the captcha css*/
 

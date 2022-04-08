@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<html>
+   <head>
+     <script type="text/javascript" src="./index.js"></script>   
+     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCS E-sign</title>
+    <title>Sign In </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon"
         href="https://www.freelogovectors.net/wp-content/uploads/2022/02/tata_logo_freelogovectors.net_.png">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+   </head>
+   <body onload="generateCaptcha();" bgcolor="lightgray">
+    <div class="center">
 
-</head>
-
-<body bgcolor="lightgray">
-    <center>
-        <div class="container"
-        <h1>Welcome to TCS e-sign</h1>
-
-        <form action="./page1.html">
-            <label for="email" class="letter">Email:</label>
-         
-            <input type="text" id="username" name="username" required> 
+    <h1>Welcome to TCS e-sign</h1><br>
+          <form action="./page1.html">
+            <label for="email" class="letter inputs">Email:</label>
+            <br>    
+            <input type="text" id="username" name="username" class="inputs" required>
             <br><br>
-            <label for="pwd" class="letter">Password:</label>
-            <input type="password" id="pwd" name="pwd" required>
+            <label for="pwd" class="letter inputs">Password:</label>
+            <br>
+            <input type="password" id="pwd" name="pwd" class="inputs" required>
             <br><br>
-            <label for="confirm" class="letter">Confirm Password:</label>
-            <input type="password" id="pwd2" name="pwd2" required>
-            <p class="letter">Please answer the CAPTCHA</p>
-            <div class="center">
-                <div id="captchaBackground">    
-                <canvas id="captcha">captcha text</canvas>
-                <input id="textBox" type="text" name="text">
-                <div id="buttons">
-                <input id="submitButton" type="submit" class="login">
-                <button id="refreshButton" type="submit" class="login">Refresh</button>
-                </div>
-                <span id="output"></span>
-                </div>
-                
-                </div>
-            <script src="./captcha.js"></script>  
+            <label for="confirm" class="letter inputs">Confirm Password:</label>
+            <br>
+            <input type="password" id="pwd2" name="pwd2" class="inputs">
+              
+         <h3>Please please fill the following fields to validate.</h3>
+       
+                  <input type="text" id="mainCaptcha"readonly="readonly" class="inputs"/> 
+                  <br><br>
+                  <input type="button" id="refresh" value="Refresh" onclick="generateCaptcha();" class="inputs login"/>
+                  <br><br>
+             
+                  <input type="text" id="txtInput" class="inputs"/>    
+                    <br><br>
+                  <input id="Button1" type="submit" value="Submit" onclick="CheckValidCaptcha();" class="inputs login"/>
+            <br>
+               <span id="error" style="color:red"></span>
+            
+               <span id="success" style="color:green"></span>
+           
         </form>
     </div>
-    </center>
-</body>
-
+    <a href="./Instructions for the E-sign.pdf">Instructions for the E-Sign.</a><br>
+    <a href="./instructivo TATA.pdf">Instrucciones para la firma electrónica.</a>
+    <footer>
+      <dl>
+        <li class="social"><a href="https://www.tcs.com/">TCS.com</a></li>
+        <li class="social"><a href="https://www.facebook.com/TataConsultancyServicesLatam/">Facebook</a></li>
+        <li class="social"><a href="https://twitter.com/tcs">Twitter</a></li>
+      </dl>
+    </footer>
+    </body>
 </html>

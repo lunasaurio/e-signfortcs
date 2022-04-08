@@ -32,17 +32,37 @@ h1{
 .content{
 	margin-left: 25%;
 	margin-right: 25%;
+	margin-top: 30%;
 }
+
+.letter{
+	font-family: 'Crete Round', serif;
+	font-weight: 600;
+}
+
 body{
 	background-image: url("https://media.cdn.gradconnection.com/uploads/5b8c0d5d-91a7-40e7-b10d-aaebf5ef34f3-tata-new-banner1.jpg");
 	background-repeat: no-repeat;
+	background-size: 100%;
+	
 }
 .container{
-	margin-left: 25%;
-	margin-right: 25%;
-	margin-top: 40%;
+	position:relative;
+	top: 35%; left: 25%;
 }
 
+.inputs{
+	margin-left: 3cm;
+}
+.answer{
+	margin-left: 0.8cm;
+}
+.social{
+	list-style: none;
+	float: right;
+	text-align: right;
+	margin: 1cm;
+}
 /* this code is for the captcha css*/
 
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
@@ -53,7 +73,6 @@ body {
 #captchaBackground {
  height: 220px;
  width: 250px;
- background-color:;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -79,6 +98,7 @@ body {
  display: flex;
  flex-direction: column;
  align-items: center;
+ margin-top: 30%;
 }
 #submitButton {
  margin-top: 2em;
